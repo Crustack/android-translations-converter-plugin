@@ -10,7 +10,7 @@ const val PLURALS_XML_TAG = "plurals"
 const val ITEM_XML_TAG = "item"
 const val PLURALS_KEY_MARKER = "_PLURALS_"
 const val QUANTITY_XML_ATTRIBUTE = "quantity"
-val PLURALS_QUANTITIES = setOf("zero", "one", "two", "few", "many", "other")
+val PLURALS_QUANTITIES = listOf("zero", "one", "two", "few", "many", "other")
 
 typealias TranslationKey = String
 typealias LanguageFolderName = String

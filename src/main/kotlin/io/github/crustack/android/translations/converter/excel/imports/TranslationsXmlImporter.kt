@@ -23,7 +23,7 @@ class TranslationsXmlImporter(private val progressLogger: ProgressLogger) {
                 translation.values.containsKey(language)
             }
 
-            for ((key, androidTranslation) in translationsForLanguage.entries.sortedBy { it.key }) {
+            for ((key, androidTranslation) in translationsForLanguage.entries.sortedWith(translationComparator)) {
                 androidTranslation.values[language]?.let { translationValue ->
                     if (translationValue.isNotEmpty()) {
                         val escapedValue = translationValue.escapeForStringsXml()
@@ -120,5 +120,18 @@ class TranslationsXmlImporter(private val progressLogger: ProgressLogger) {
 
     companion object{
         const val TRANSLATIONS_FILE_NAME = "strings.xml"
+
+        private val translationComparator: Comparator<Map.Entry<TranslationKey, AndroidTranslation>> =
+            compareBy<Map.Entry<TranslationKey, AndroidTranslation>> { (key, _) ->
+                if (key.contains(PLURALS_KEY_MARKER)) key.substringBefore(PLURALS_KEY_MARKER) else key
+            }.thenBy { (key, _) ->
+                if (key.contains(PLURALS_KEY_MARKER)) {
+                    val quantity = key.substringAfter(PLURALS_KEY_MARKER)
+                    val idx = PLURALS_QUANTITIES.indexOf(quantity)
+                    if (idx == -1) Int.MAX_VALUE else idx
+                } else {
+                    0
+                }
+            }
     }
 }
