@@ -110,7 +110,7 @@
     <string name="export_settings_message">Tous les paramètres seront exportés dans un fichier JSON, qui pourra être utilisé pour réimporter les paramètres enregistrés.\n\nVeuillez noter que cela n\'inclut pas les paramètres chiffrés, tels que le mot de passe de sauvegarde automatique ou la clé de chiffrement biométrique.</string>
     <string name="export_settings_success">Paramètres exportés avec succès</string>
     <string name="exporting_backup">Exportation de la sauvegarde</string>
-    <string name="external_data_message">En activant cette option, la base de données interne de l\'application sera déplacée vers le stockage externe de l\'application (Android/media/com.philkes.notallyx).\nEn combinaison avec des applications de synchronisation de fichiers, cela peut être utilisé pour synchroniser les données de NotallyX entre plusieurs appareils.</string>
+    <string name="external_data_message">En activant cette option, la base de données interne de l\'application sera déplacée vers le stockage externe de l\'application (Android/media/com.crustack.notallyx).\nEn combinaison avec des applications de synchronisation de fichiers, cela peut être utilisé pour synchroniser les données de NotallyX entre plusieurs appareils.</string>
     <string name="extracted_files">Fichiers extraits</string>
     <string name="filter">Filtrer</string>
     <string name="folder">Dossier</string>

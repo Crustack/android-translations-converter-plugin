@@ -8,8 +8,8 @@ plugins {
     id("com.gradle.plugin-publish") version "1.3.0"
 }
 
-group = "io.github.philkes"
-version = "1.0.5"
+group = "io.github.crustack"
+version = "1.0.6"
 
 repositories {
     mavenCentral()
@@ -39,16 +39,16 @@ kotlin {
 }
 
 gradlePlugin {
-    website = "https://github.com/PhilKes/android-translations-converter-plugin"
-    vcsUrl = "https://github.com/PhilKes/android-translations-converter-plugin"
+    website = "https://github.com/Crustack/android-translations-converter-plugin"
+    vcsUrl = "https://github.com/Crustack/android-translations-converter-plugin"
     description = "Easily convert Android strings.xml files to Excel and back"
     plugins {
         create("androidTranslationsConverter") {
-            id = "io.github.philkes.android-translations-converter"
+            id = "io.github.crustack.android-translations-converter"
             displayName = "Android Translations Converter"
             description = "Easily convert Android translations to Excel and back"
             tags = listOf("android", "translation", "xml", "excel", "converter")
-            implementationClass = "io.github.philkes.android.translations.converter.AndroidTranslationsConverterPlugin"
+            implementationClass = "io.github.crustack.android.translations.converter.AndroidTranslationsConverterPlugin"
         }
     }
 }

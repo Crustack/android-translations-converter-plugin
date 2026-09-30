@@ -1,5 +1,5 @@
 # Android Translations Converter
-<a href="https://plugins.gradle.org/plugin/io.github.philkes.android-translations-converter"><img alt="Gradle Plugin Portal Version" src="https://img.shields.io/gradle-plugin-portal/v/io.github.philkes.android-translations-converter"></a>
+<a href="https://plugins.gradle.org/plugin/io.github.crustack.android-translations-converter"><img alt="Gradle Plugin Portal Version" src="https://img.shields.io/gradle-plugin-portal/v/io.github.crustack.android-translations-converter"></a>
 
 
 Plug'n'Play gradle plugin for your Android projects to convert between Android `strings.xml` translations and Excel.
@@ -19,7 +19,7 @@ Useful if your translations are created by non-technical/external translators wh
 In `build.gradle`:
 ```groovy
 plugins {
-    id("io.github.philkes.android-translations-converter") version "1.0.5"
+    id("io.github.crustack.android-translations-converter") version "1.0.5"
 }
 ```
 
@@ -49,7 +49,7 @@ tasks.named("exportTranslationsToExcel", ExportToExcelTask) {
 
 ### Example Excel
 
-To preview a full exported Excel file [download it here](https://github.com/PhilKes/android-translations-converter/raw/refs/heads/main/src/test/resources/expected.xlsx)
+To preview a full exported Excel file [download it here](https://github.com/Crustack/android-translations-converter/raw/refs/heads/main/src/test/resources/expected.xlsx)
 
 <img src="./doc/example_excel.png" alt="example-excel" /> 
 

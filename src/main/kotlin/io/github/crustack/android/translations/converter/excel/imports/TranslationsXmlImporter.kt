@@ -1,6 +1,6 @@
-package io.github.philkes.android.translations.converter.excel.imports
+package io.github.crustack.android.translations.converter.excel.imports
 
-import io.github.philkes.android.translations.converter.*
+import io.github.crustack.android.translations.converter.*
 import org.gradle.internal.logging.progress.ProgressLogger
 import java.io.File
 import javax.xml.parsers.DocumentBuilderFactory

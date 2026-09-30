@@ -102,7 +102,7 @@
     <string name="export_settings_message">Alle Einstellungen werden als JSON Datei exportiert, die dann zum Re-Import genutzt werden kann.\n\nBeachte das hier bei verschlüsselte Einstellungen wie das Auto-Backup Passwort oder die biometrische Verschlüssung nicht exportiert wird</string>
     <string name="export_settings_success">Einstellungen erfolgreich exportiert</string>
     <string name="exporting_backup">Backup Exportieren</string>
-    <string name="external_data_message">Wird dies aktiviert, wird die app-interne Datenbank in den app-externen Speicher ausgelagert (Android/media/com.philkes.notallyx). In Kombination mit Datei-Synchronisations Apps kann dies genutzt werden um NotallyX Daten zwischen mehrere Geräte zu synchronisieren.</string>
+    <string name="external_data_message">Wird dies aktiviert, wird die app-interne Datenbank in den app-externen Speicher ausgelagert (Android/media/com.crustack.notallyx). In Kombination mit Datei-Synchronisations Apps kann dies genutzt werden um NotallyX Daten zwischen mehrere Geräte zu synchronisieren.</string>
     <string name="extracted_files">Dateien extrahiert</string>
     <string name="filter">Filtern</string>
     <string name="folder">Ordner</string>

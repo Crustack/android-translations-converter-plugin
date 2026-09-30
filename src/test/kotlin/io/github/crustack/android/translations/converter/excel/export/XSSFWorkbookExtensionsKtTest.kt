@@ -1,4 +1,4 @@
-package io.github.philkes.android.translations.converter.excel.export
+package io.github.crustack.android.translations.converter.excel.export
 
 import org.apache.commons.io.FileUtils
 import org.apache.poi.ss.usermodel.Cell

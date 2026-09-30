@@ -1,4 +1,4 @@
-package io.github.philkes.android.translations.converter
+package io.github.crustack.android.translations.converter
 
 
 fun String.escapeForStringsXml(): String{

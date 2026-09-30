@@ -1,9 +1,9 @@
-package io.github.philkes.android.translations.converter.excel
+package io.github.crustack.android.translations.converter.excel
 
-import io.github.philkes.android.strings.excel.converter.ImportFromExcelTask
-import io.github.philkes.android.translations.converter.AndroidTranslationsConverterPlugin.Companion.EXPORT_TASK_NAME
-import io.github.philkes.android.translations.converter.AndroidTranslationsConverterPlugin.Companion.IMPORT_TASK_NAME
-import io.github.philkes.android.translations.converter.excel.export.ExportToExcelTask
+import io.github.crustack.android.strings.excel.converter.ImportFromExcelTask
+import io.github.crustack.android.translations.converter.AndroidTranslationsConverterPlugin.Companion.EXPORT_TASK_NAME
+import io.github.crustack.android.translations.converter.AndroidTranslationsConverterPlugin.Companion.IMPORT_TASK_NAME
+import io.github.crustack.android.translations.converter.excel.export.ExportToExcelTask
 import org.apache.commons.io.FileUtils
 import org.gradle.testkit.runner.GradleRunner
 import org.gradle.testkit.runner.TaskOutcome.FAILED
@@ -43,7 +43,7 @@ class AndroidTranslationsConverterPluginTest {
          import ${ExportToExcelTask::class.java.name}
 
          plugins {
-            id("io.github.philkes.android-translations-converter")
+            id("io.github.crustack.android-translations-converter")
          }
 
          tasks.named<${ExportToExcelTask::class.java.simpleName}>("$EXPORT_TASK_NAME") {
@@ -74,7 +74,7 @@ class AndroidTranslationsConverterPluginTest {
          import ${ImportFromExcelTask::class.java.name}
 
          plugins {
-            id("io.github.philkes.android-translations-converter")
+            id("io.github.crustack.android-translations-converter")
          }
 
          tasks.named<${ImportFromExcelTask::class.java.simpleName}>("$IMPORT_TASK_NAME") {

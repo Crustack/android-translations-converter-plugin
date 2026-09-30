@@ -1,7 +1,7 @@
-package io.github.philkes.android.translations.converter.excel
+package io.github.crustack.android.translations.converter.excel
 
-import io.github.philkes.android.translations.converter.escapeForStringsXml
-import io.github.philkes.android.translations.converter.unescapeForStringsXml
+import io.github.crustack.android.translations.converter.escapeForStringsXml
+import io.github.crustack.android.translations.converter.unescapeForStringsXml
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 

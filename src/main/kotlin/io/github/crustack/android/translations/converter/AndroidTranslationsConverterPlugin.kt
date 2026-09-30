@@ -1,7 +1,7 @@
-package io.github.philkes.android.translations.converter
+package io.github.crustack.android.translations.converter
 
-import io.github.philkes.android.strings.excel.converter.ImportFromExcelTask
-import io.github.philkes.android.translations.converter.excel.export.ExportToExcelTask
+import io.github.crustack.android.strings.excel.converter.ImportFromExcelTask
+import io.github.crustack.android.translations.converter.excel.export.ExportToExcelTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.register
